@@ -1,4 +1,5 @@
- 
+# Abstrakt
+V posledních letech zažívá oblast umělé inteligence a strojového učení dramatický nárůst zájmu a inovací. Tento rozmach otevírá nové možnosti v různých oborech, včetně počítačového vidění. V našem projektu jsme se zaměřili na použití zařízení NVIDIA Jetson Nano, které je vybaveno výkonnou grafickou kartou optimalizovanou pro aplikace umělé inteligence a počítačového vidění. Cílem naší práce bylo rozpoznat pomocí Jetson Nano znaky vlajkového semaforu \footnote{Anglicky: \textit{flag semophore}} na základě klíčových bodů na těle. Po rozpoznání jednotlivých písmen jsme byli schopni dekódovat vysílanou zprávu. Z našich experimentů jsme získali cenné poznatky a diskutovali jsme o praktických výhodách a omezeních tohoto zařízení.
 
 # Úvod
 
