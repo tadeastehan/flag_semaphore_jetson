@@ -1,6 +1,8 @@
 # Autoři
 Tadeáš Těhan, Gymnázium Ostrava-Zábřeh; tadeastehan@gmail.com
+
 Mikuláš Voňka, Gymnázium Kladno; vonka.mikulas@seznam.cz
+
 Jan Pavel Šafrata, Gymnázium Evolution; honza@klan.cz
 
 
