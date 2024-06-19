@@ -21,8 +21,7 @@ jazyku Python, který nabízí specializovanou knihovnu pro práci s tímto
 zařízením.
 
 <p align="center">
-![Klíčové body na lidském těle detekované neuronovou
-sítí.](images/body_skeleton.png)
+  <img src="images/body_skeleton.png" alt="Image of body skeleton"/>
 </p>
 # Implementace kódu
 
