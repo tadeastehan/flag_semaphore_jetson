@@ -23,6 +23,7 @@ zařízením.
 <p align="center">
   <img src="images/body_skeleton.png" alt="Image of body skeleton"/>
 </p>
+
 # Implementace kódu
 
 Naším prvním úkolem bylo umožnit programu rozpoznat gesta. To zahrnovalo
