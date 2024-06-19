@@ -14,16 +14,14 @@ výhody a omezení tohoto zařízení pro praktické použití.
 
 Pro rozpoznávání důležitých bodů na těle jsme použili již předtrénovaný
 model *Pose-ResNet18-Body*, který dokáže identifikovat 18 klíčových bodů
-na lidském těle, viz
-Obrázek [1](#fig:body-skeleton){reference-type="ref"
-reference="fig:body-skeleton"}. Tento model nám umožnil sledovat pozice
+na lidském těle, viz obrázek níže. Tento model nám umožnil sledovat pozice
 rukou a efektivně tak rozpoznávat jednotlivé signály semaforu vlajek
 [@enwiki:1228246342]. Celý systém jsme vytvářeli pomocí programovacího
 jazyku Python, který nabízí specializovanou knihovnu pro práci s tímto
 zařízením.
 
 ![Klíčové body na lidském těle detekované neuronovou
-sítí.](IMG/body_skeleton.png){#fig:body-skeleton}
+sítí.](images/body_skeleton.png){#fig:body-skeleton}
 
 # Implementace kódu
 
@@ -74,7 +72,7 @@ semaforu je i mezera či znak, díky kterému můžeme písmena mazat
 (backspace). V grafickém prostředí vidíme také kostru rozpoznaných bodů
 na lidském těle, které drží virtuální vlajky pro lepší imitaci reality.
 
-![Grafické prostředí pro dekódování zprávy.](IMG/tvnj.png){#fig:tvnj
+![Grafické prostředí pro dekódování zprávy.](images/tvnj.png){#fig:tvnj
 width="\\textwidth"}
 
 # Výsledky a diskuse
