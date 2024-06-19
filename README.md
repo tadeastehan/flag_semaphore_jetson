@@ -1,14 +1,14 @@
 # Abstrakt
-V posledních letech zažívá oblast umělé inteligence a strojového učení dramatický nárůst zájmu a inovací. Tento rozmach otevírá nové možnosti v různých oborech, včetně počítačového vidění. V našem projektu jsme se zaměřili na použití zařízení NVIDIA Jetson Nano, které je vybaveno výkonnou grafickou kartou optimalizovanou pro aplikace umělé inteligence a počítačového vidění. Cílem naší práce bylo rozpoznat pomocí Jetson Nano znaky vlajkového semaforu[^1] na základě klíčových bodů na těle. Po rozpoznání jednotlivých písmen jsme byli schopni dekódovat vysílanou zprávu. Z našich experimentů jsme získali cenné poznatky a diskutovali jsme o praktických výhodách a omezeních tohoto zařízení.
+V posledních letech zažívá oblast umělé inteligence a strojového učení dramatický nárůst zájmu a inovací. Tento rozmach otevírá nové možnosti v různých oborech, včetně počítačového vidění. V našem projektu jsme se zaměřili na použití zařízení NVIDIA Jetson Nano, které je vybaveno výkonnou grafickou kartou optimalizovanou pro aplikace umělé inteligence a počítačového vidění. Cílem naší práce bylo rozpoznat pomocí Jetson Nano znaky vlajkového semaforu \footnote{Anglicky: \textit{flag semophore}} na základě klíčových bodů na těle. Po rozpoznání jednotlivých písmen jsme byli schopni dekódovat vysílanou zprávu. Z našich experimentů jsme získali cenné poznatky a diskutovali jsme o praktických výhodách a omezeních tohoto zařízení.
 
 # Úvod
 
 Zařízení, na kterém jsme celý projekt testovali, byl malý jednodeskový
-počítač NVIDIA Jetson Nano [@nvidia] s GPU[^2]. Díky tomu aspektu je náš
+počítač NVIDIA Jetson Nano s GPU[^2]. Díky tomu aspektu je náš
 projekt přenosný a díky akceleraci výpočtů pomocí GPU i dostatečně
-rychlým. Pro urychlení výpočtů jsme využili technologii CUDA [@cuda] od
+rychlým. Pro urychlení výpočtů jsme využili technologii CUDA od
 společnosti NVIDIA, která umožňuje efektivní zpracování paralelních
-úloh. NVIDIA rovněž poskytuje Software Development Kit [@sdk] pro
+úloh. NVIDIA rovněž poskytuje Software Development Kit pro
 hluboké učení, což nám značně usnadnilo vývoj aplikace. Na základě
 našich experimentů jsme analyzovali výsledky a podrobně diskutovali
 výhody a omezení tohoto zařízení pro praktické použití.
@@ -16,13 +16,12 @@ výhody a omezení tohoto zařízení pro praktické použití.
 Pro rozpoznávání důležitých bodů na těle jsme použili již předtrénovaný
 model *Pose-ResNet18-Body*, který dokáže identifikovat 18 klíčových bodů
 na lidském těle, viz obrázek níže. Tento model nám umožnil sledovat pozice
-rukou a efektivně tak rozpoznávat jednotlivé signály semaforu vlajek
-[@enwiki:1228246342]. Celý systém jsme vytvářeli pomocí programovacího
+rukou a efektivně tak rozpoznávat jednotlivé signály semaforu vlajek. Celý systém jsme vytvářeli pomocí programovacího
 jazyku Python, který nabízí specializovanou knihovnu pro práci s tímto
 zařízením.
 
 ![Klíčové body na lidském těle detekované neuronovou
-sítí.](images/body_skeleton.png){#fig:body-skeleton}
+sítí.](images/body_skeleton.png)
 
 # Implementace kódu
 
@@ -62,8 +61,7 @@ písmeno a začne detekce dalšího písmene zprávy.
 
 ## Grafické prostředí
 
-Součástí grafického prostředí, které je zobrazeno na Obrázku
-[2](#fig:tvnj){reference-type="ref" reference="fig:tvnj"}, je v levém
+Součástí grafického prostředí, které je zobrazeno na obrázku níže, je v levém
 horním rohu červený kruh, který se postupně v závislosti na proměnné $i$
 naplňuje zelenou barvou. Pokud jsme tedy v postavení dostatečně dlouho
 dobu, tak se kruh naplní zelenou barvou a písmeno se přidá do zprávy v
@@ -73,8 +71,7 @@ semaforu je i mezera či znak, díky kterému můžeme písmena mazat
 (backspace). V grafickém prostředí vidíme také kostru rozpoznaných bodů
 na lidském těle, které drží virtuální vlajky pro lepší imitaci reality.
 
-![Grafické prostředí pro dekódování zprávy.](images/tvnj.png){#fig:tvnj
-width="\\textwidth"}
+![Grafické prostředí pro dekódování zprávy.](images/tvnj.png)
 
 # Výsledky a diskuse
 
@@ -116,5 +113,5 @@ Naše hlavní poděkování si zaslouží Ing. Jakub Klinkovský, Ph.D. za
 odbornou pomoc při zhotovení práce.
 
 [^1]: Anglicky: *flag semophore*
+
 [^2]: Graphics processing unit
-[@nvidia]: NVIDIA
