@@ -20,9 +20,10 @@ rukou a efektivně tak rozpoznávat jednotlivé signály semaforu vlajek. Celý 
 jazyku Python, který nabízí specializovanou knihovnu pro práci s tímto
 zařízením.
 
+<p align="center">
 ![Klíčové body na lidském těle detekované neuronovou
 sítí.](images/body_skeleton.png)
-
+</p>
 # Implementace kódu
 
 Naším prvním úkolem bylo umožnit programu rozpoznat gesta. To zahrnovalo
